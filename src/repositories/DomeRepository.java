@@ -53,7 +53,8 @@ public class DomeRepository {
         return "  {\n" +
                 "    \"nome\": \"" + dome.getName() + "\",\n" +
                 "    \"cultivo\": \"" + dome.getCultivo() + "\",\n" +
-                "    \"capacidade\": " + dome.getCapacidade() + "\n" +
+                "    \"capacidade\": " + dome.getCapacidade() + ",\n" +
+                SensorRepository.sensorListToJson(dome.getSensorDataList()) + "\n" +
                 "  }";
     }
 }
