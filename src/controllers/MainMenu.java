@@ -1,0 +1,81 @@
+package controllers;
+
+import models.dome.Dome;
+import models.dome.TreeDome;
+import models.dome.VegetableDome;
+import services.DomeService;
+import utilities.Menu;
+import utilities.UserInput;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainMenu {
+    public static int menuStart() {
+        List<String> options = new ArrayList<>();
+
+        options.add("0 - Encerrar sistema");
+        options.add("1 - Cadastrar cúpula agricola");
+        options.add("2 - Listar cupulas cadastradas");
+        options.add("3 - Gerar dados randomizados");
+        options.add("4 - Exibir relatorio ambiental");
+        options.add("5 - Verificar Alertas");
+
+        return Menu.create(options);
+    }
+
+    public static int menuDomeType() {
+        List<String> options = new ArrayList<>();
+
+        options.add("1 - Cúpula de árvores");
+        options.add("2 - Cúpula de vegetais");
+
+        return Menu.create(options);
+    }
+
+    public static Dome registerDome() {
+        System.out.println();
+        System.out.println("Cadastro de cúpula agrícula");
+
+        String name = UserInput.text("Nome da cupula: ");
+        int capacity = UserInput.number("Capacidade de plantas: ");
+
+        int domeType = menuDomeType();
+
+        return DomeService.createDome(name, capacity, domeType);
+    }
+
+    public static void showRegisteredDome(Dome dome) {
+        System.out.println();
+        System.out.println("Cúpula cadastrada com sucesso!");
+        System.out.println("Nome: " + dome.getName());
+        System.out.println("Cultivo: " + dome.getCultivo());
+        System.out.println("Capacidade: " + dome.getCapacidade() + " plantas");
+    }
+
+    public static void listDomes(List<Dome> domes) {
+        System.out.println();
+        System.out.println("Cúpulas cadastradas:");
+
+        if (domes.isEmpty()) {
+            System.out.println("Nenhuma cúpula cadastrada.");
+            return;
+        }
+
+        for (int i = 0; i < domes.size(); i++) {
+            Dome dome = domes.get(i);
+
+            System.out.println();
+            System.out.println("ID: " + i);
+            System.out.println("Nome: " + dome.getName());
+            System.out.println("cultivo: " + dome.getCultivo());
+            System.out.println("Capacidade: " + dome.getCapacidade() + " plantas");
+
+        }
+    }
+
+    public static void finishSystem() {
+        System.out.println();
+        System.out.println("Sistema encerrado. Até logo!");
+    }
+}
