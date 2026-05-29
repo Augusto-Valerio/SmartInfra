@@ -2,11 +2,11 @@ package controllers;
 
 import models.dome.Dome;
 import services.DomeService;
+import services.ReportService;
 import services.SensorService;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 
 public class MainController {
@@ -17,14 +17,14 @@ public class MainController {
 
         boolean running = true;
         while (running) {
-        int chose = MainMenu.menuStart();
+            int chose = MainMenu.menuStart();
 
             if (chose == 0) {
                 running = false;
                 MainMenu.finishSystem();
             }
             if (chose == 1) {
-               Dome dome = MainMenu.registerDome();
+                Dome dome = MainMenu.registerDome();
 
                 domes.add(dome);
 
@@ -44,6 +44,13 @@ public class MainController {
                     SensorService.generateRandomSensorData(domes, amount);
 
                     MainMenu.showGenerateSensorData(amount);
+                }
+            }
+            if (chose == 4) {
+                if (domes.isEmpty()) {
+                    System.out.println("Cadastre uma cúpula antes de exibir o relatório ambiental.");
+                } else {
+                    MainMenu.showEnvironmentalReport(ReportService.generateEnvironmentalReport(domes));
                 }
             }
 

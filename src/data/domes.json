@@ -2,21 +2,56 @@
   {
     "nome": "cupula 1",
     "cultivo": "Árvores",
-    "capacidade": 2,
+    "capacidade": 5,
     "sensores": [
       {
-        "temperatura": 27.08,
-        "umidade": 64.6,
-        "oxigenio": 18.05,
-        "luminosidade": 49.19,
-        "nivelAgua": 63.65
+        "temperatura": 20.66,
+        "umidade": 46.04,
+        "oxigenio": 20.61,
+        "luminosidade": 53.36,
+        "nivelAgua": 98.04
       },
       {
-        "temperatura": 18.97,
-        "umidade": 55.68,
-        "oxigenio": 21.52,
-        "luminosidade": 47.2,
-        "nivelAgua": 56.72
+        "temperatura": 27.47,
+        "umidade": 56.98,
+        "oxigenio": 20.01,
+        "luminosidade": 90.97,
+        "nivelAgua": 96.08
+      },
+      {
+        "temperatura": 27.03,
+        "umidade": 45.2,
+        "oxigenio": 19.0,
+        "luminosidade": 55.98,
+        "nivelAgua": 64.01
+      },
+      {
+        "temperatura": 20.13,
+        "umidade": 70.69,
+        "oxigenio": 18.43,
+        "luminosidade": 55.75,
+        "nivelAgua": 45.44
+      },
+      {
+        "temperatura": 22.21,
+        "umidade": 56.24,
+        "oxigenio": 22.6,
+        "luminosidade": 47.32,
+        "nivelAgua": 50.16
+      },
+      {
+        "temperatura": 26.32,
+        "umidade": 79.02,
+        "oxigenio": 22.32,
+        "luminosidade": 55.61,
+        "nivelAgua": 76.21
+      },
+      {
+        "temperatura": 27.0,
+        "umidade": 46.33,
+        "oxigenio": 20.16,
+        "luminosidade": 62.09,
+        "nivelAgua": 55.56
       }
     ]
   },
@@ -26,18 +61,39 @@
     "capacidade": 8,
     "sensores": [
       {
-        "temperatura": 24.46,
-        "umidade": 48.27,
-        "oxigenio": 21.06,
-        "luminosidade": 67.74,
-        "nivelAgua": 47.91
+        "temperatura": 20.3,
+        "umidade": 61.31,
+        "oxigenio": 22.54,
+        "luminosidade": 51.89,
+        "nivelAgua": 30.24
       },
       {
-        "temperatura": 21.7,
-        "umidade": 75.78,
-        "oxigenio": 19.48,
-        "luminosidade": 71.63,
-        "nivelAgua": 43.07
+        "temperatura": 21.67,
+        "umidade": 84.37,
+        "oxigenio": 21.52,
+        "luminosidade": 45.17,
+        "nivelAgua": 47.72
+      },
+      {
+        "temperatura": 23.21,
+        "umidade": 58.03,
+        "oxigenio": 18.77,
+        "luminosidade": 79.13,
+        "nivelAgua": 92.46
+      },
+      {
+        "temperatura": 28.12,
+        "umidade": 48.28,
+        "oxigenio": 18.64,
+        "luminosidade": 50.24,
+        "nivelAgua": 91.11
+      },
+      {
+        "temperatura": 19.75,
+        "umidade": 65.5,
+        "oxigenio": 18.87,
+        "luminosidade": 43.95,
+        "nivelAgua": 89.27
       }
     ]
   }

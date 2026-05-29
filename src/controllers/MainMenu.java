@@ -86,6 +86,15 @@ public class MainMenu {
         System.out.println(amount + " leitura(s) de sensores gerada(s) com sucesso para cada cúpula.");
     }
 
+    public static void showEnvironmentalReport(List<String> report) {
+        System.out.println();
+        System.out.println("Relatório ambiental");
+
+        for (String line : report) {
+            System.out.println(line);
+        }
+    }
+
     public static void finishSystem() {
         System.out.println();
         System.out.println("Sistema encerrado. Até logo!");
