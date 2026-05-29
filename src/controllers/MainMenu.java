@@ -16,9 +16,9 @@ public class MainMenu {
 
         options.add("0 - Encerrar sistema");
         options.add("1 - Cadastrar cúpula agricola");
-        options.add("2 - Listar cupulas cadastradas");
+        options.add("2 - Listar cúpulas cadastradas");
         options.add("3 - Gerar dados randomizados");
-        options.add("4 - Exibir relatorio ambiental");
+        options.add("4 - Exibir relatório ambiental");
         options.add("5 - Verificar Alertas");
 
         return Menu.create(options);
@@ -72,6 +72,18 @@ public class MainMenu {
             System.out.println("Capacidade: " + dome.getCapacidade() + " plantas");
 
         }
+    }
+
+    public static int askRandomDataAmount() {
+        System.out.println();
+        System.out.println("Gerar dados randomizados");
+
+        return UserInput.number("Quantos registros de sensores deseja gerar para cada cúpula? ");
+    }
+
+    public static void showGenerateSensorData(int amount) {
+        System.out.println();
+        System.out.println(amount + " leitura(s) de sensores gerada(s) com sucesso para cada cúpula.");
     }
 
     public static void finishSystem() {

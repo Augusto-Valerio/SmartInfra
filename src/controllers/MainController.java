@@ -2,6 +2,7 @@ package controllers;
 
 import models.dome.Dome;
 import services.DomeService;
+import services.SensorService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +35,18 @@ public class MainController {
             if (chose == 2) {
                 MainMenu.listDomes(domes);
             }
+            if (chose == 3) {
+                if (domes.isEmpty()) {
+                    System.out.println("Cadastre uma cúpula antes de gerar os dados randomizados.");
+                } else {
+                    int amount = MainMenu.askRandomDataAmount();
+
+                    SensorService.generateRandomSensorData(domes, amount);
+
+                    MainMenu.showGenerateSensorData(amount);
+                }
+            }
+
         }
 
     }
