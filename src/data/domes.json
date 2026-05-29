@@ -1,12 +1,44 @@
 [
   {
-    "nome": "a",
+    "nome": "cupula 1",
     "cultivo": "Árvores",
-    "capacidade": 2
+    "capacidade": 2,
+    "sensores": [
+      {
+        "temperatura": 27.08,
+        "umidade": 64.6,
+        "oxigenio": 18.05,
+        "luminosidade": 49.19,
+        "nivelAgua": 63.65
+      },
+      {
+        "temperatura": 18.97,
+        "umidade": 55.68,
+        "oxigenio": 21.52,
+        "luminosidade": 47.2,
+        "nivelAgua": 56.72
+      }
+    ]
   },
   {
-    "nome": "b",
+    "nome": "cupula 2",
     "cultivo": "Vegetais",
-    "capacidade": 5
+    "capacidade": 8,
+    "sensores": [
+      {
+        "temperatura": 24.46,
+        "umidade": 48.27,
+        "oxigenio": 21.06,
+        "luminosidade": 67.74,
+        "nivelAgua": 47.91
+      },
+      {
+        "temperatura": 21.7,
+        "umidade": 75.78,
+        "oxigenio": 19.48,
+        "luminosidade": 71.63,
+        "nivelAgua": 43.07
+      }
+    ]
   }
 ]
