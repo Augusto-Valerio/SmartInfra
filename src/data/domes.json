@@ -1,0 +1,12 @@
+[
+  {
+    "nome": "a",
+    "cultivo": "Árvores",
+    "capacidade": 2
+  },
+  {
+    "nome": "b",
+    "cultivo": "Vegetais",
+    "capacidade": 5
+  }
+]
