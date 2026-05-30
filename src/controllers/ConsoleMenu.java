@@ -1,8 +1,6 @@
 package controllers;
 
 import models.dome.Dome;
-import models.dome.TreeDome;
-import models.dome.VegetableDome;
 import services.DomeService;
 import utilities.Menu;
 import utilities.UserInput;
@@ -10,15 +8,15 @@ import utilities.UserInput;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainMenu {
+public class ConsoleMenu {
     public static int menuStart() {
         List<String> options = new ArrayList<>();
 
         options.add("0 - Encerrar sistema");
         options.add("1 - Cadastrar cúpula agricola");
-        options.add("2 - Listar cupulas cadastradas");
+        options.add("2 - Listar cúpulas cadastradas");
         options.add("3 - Gerar dados randomizados");
-        options.add("4 - Exibir relatorio ambiental");
+        options.add("4 - Exibir relatório ambiental");
         options.add("5 - Verificar Alertas");
 
         return Menu.create(options);
@@ -71,6 +69,36 @@ public class MainMenu {
             System.out.println("cultivo: " + dome.getCultivo());
             System.out.println("Capacidade: " + dome.getCapacidade() + " plantas");
 
+        }
+    }
+
+    public static int askRandomDataAmount() {
+        System.out.println();
+        System.out.println("Gerar dados randomizados");
+
+        return UserInput.number("Quantos registros de sensores deseja gerar para cada cúpula? ");
+    }
+
+    public static void showGenerateSensorData(int amount) {
+        System.out.println();
+        System.out.println(amount + " leitura(s) de sensores gerada(s) com sucesso para cada cúpula.");
+    }
+
+    public static void showEnvironmentalReport(List<String> report) {
+        System.out.println();
+        System.out.println("Relatório ambiental");
+
+        for (String line : report) {
+            System.out.println(line);
+        }
+    }
+
+    public static void showAlerts(List<String> alerts) {
+        System.out.println();
+        System.out.println("Verificação de alertas");
+
+        for (String alert : alerts) {
+            System.out.println(alert);
         }
     }
 

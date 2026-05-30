@@ -1,12 +1,121 @@
 [
   {
-    "nome": "a",
+    "nome": "c1",
     "cultivo": "Árvores",
-    "capacidade": 2
-  },
-  {
-    "nome": "b",
-    "cultivo": "Vegetais",
-    "capacidade": 5
+    "capacidade": 2,
+    "sensores": [
+      {
+        "dataHora": "29/05/2026 - 21:49",
+        "temperatura": 22.92,
+        "umidade": 63.71,
+        "oxigenio": 22.24,
+        "luminosidade": 80.3,
+        "nivelAgua": 88.76
+      },
+      {
+        "dataHora": "29/05/2026 - 21:49",
+        "temperatura": 18.44,
+        "umidade": 60.32,
+        "oxigenio": 21.35,
+        "luminosidade": 91.43,
+        "nivelAgua": 71.41
+      },
+      {
+        "dataHora": "29/05/2026 - 21:49",
+        "temperatura": 23.76,
+        "umidade": 84.27,
+        "oxigenio": 20.55,
+        "luminosidade": 64.87,
+        "nivelAgua": 71.04
+      },
+      {
+        "dataHora": "29/05/2026 - 21:49",
+        "temperatura": 21.4,
+        "umidade": 76.0,
+        "oxigenio": 21.47,
+        "luminosidade": 61.38,
+        "nivelAgua": 96.25
+      },
+      {
+        "dataHora": "29/05/2026 - 21:49",
+        "temperatura": 18.84,
+        "umidade": 66.93,
+        "oxigenio": 20.14,
+        "luminosidade": 40.32,
+        "nivelAgua": 67.09
+      },
+      {
+        "dataHora": "29/05/2026 - 21:49",
+        "temperatura": 25.73,
+        "umidade": 74.87,
+        "oxigenio": 20.64,
+        "luminosidade": 55.63,
+        "nivelAgua": 54.36
+      },
+      {
+        "dataHora": "29/05/2026 - 21:49",
+        "temperatura": 20.57,
+        "umidade": 69.54,
+        "oxigenio": 20.29,
+        "luminosidade": 89.21,
+        "nivelAgua": 53.15
+      },
+      {
+        "dataHora": "29/05/2026 - 21:49",
+        "temperatura": 25.87,
+        "umidade": 73.63,
+        "oxigenio": 18.15,
+        "luminosidade": 85.47,
+        "nivelAgua": 60.23
+      },
+      {
+        "dataHora": "29/05/2026 - 21:49",
+        "temperatura": 18.74,
+        "umidade": 53.92,
+        "oxigenio": 18.78,
+        "luminosidade": 41.98,
+        "nivelAgua": 48.53
+      },
+      {
+        "dataHora": "29/05/2026 - 21:49",
+        "temperatura": 29.92,
+        "umidade": 63.69,
+        "oxigenio": 21.34,
+        "luminosidade": 84.13,
+        "nivelAgua": 80.34
+      },
+      {
+        "dataHora": "29/05/2026 - 21:49",
+        "temperatura": 27.8,
+        "umidade": 79.54,
+        "oxigenio": 22.57,
+        "luminosidade": 88.82,
+        "nivelAgua": 70.76
+      },
+      {
+        "dataHora": "29/05/2026 - 21:49",
+        "temperatura": 26.12,
+        "umidade": 59.63,
+        "oxigenio": 22.64,
+        "luminosidade": 84.96,
+        "nivelAgua": 35.67
+      },
+      {
+        "dataHora": "29/05/2026 - 21:49",
+        "temperatura": 29.59,
+        "umidade": 83.31,
+        "oxigenio": 20.92,
+        "luminosidade": 91.06,
+        "nivelAgua": 58.44
+      },
+      {
+        "dataHora": "29/05/2026 - 21:49",
+        "temperatura": 23.97,
+        "umidade": 78.16,
+        "oxigenio": 22.4,
+        "luminosidade": 40.8,
+        "nivelAgua": 38.89
+      }
+    ]
   }
 ]

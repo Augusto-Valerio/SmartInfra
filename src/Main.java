@@ -1,7 +1,7 @@
-import controllers.MainController;
+import controllers.ApplicationController;
 
 public class Main {
     public static void main(String[] args) {
-        MainController.startMenu();
+        ApplicationController.startMenu();
     }
 }

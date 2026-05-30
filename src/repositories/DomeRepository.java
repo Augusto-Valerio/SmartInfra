@@ -35,25 +35,12 @@ public class DomeRepository {
         }
     }
 
-    public static void saveAll(Dome dome) {
-        try {
-            FileWriter writer = new FileWriter("src/data/domes.json");
-
-            writer.write("[\n");
-            writer.write(domeToJson(dome));
-            writer.write("\n]");
-
-            writer.close();
-        } catch (IOException error) {
-            System.out.println("Erro ao salvar o arquivo domes.json");
-        }
-    }
-
     private static String domeToJson(Dome dome) {
         return "  {\n" +
                 "    \"nome\": \"" + dome.getName() + "\",\n" +
                 "    \"cultivo\": \"" + dome.getCultivo() + "\",\n" +
-                "    \"capacidade\": " + dome.getCapacidade() + "\n" +
+                "    \"capacidade\": " + dome.getCapacidade() + ",\n" +
+                SensorRepository.sensorListToJson(dome.getSensorDataList()) + "\n" +
                 "  }";
     }
 }
