@@ -28,7 +28,7 @@ public class ConsoleMenu {
         options.add("1 - Cúpula de árvores");
         options.add("2 - Cúpula de vegetais");
 
-        return Menu.create(options);
+        return Menu.createFromOne(options);
     }
 
     public static Dome registerDome() {
@@ -81,7 +81,7 @@ public class ConsoleMenu {
 
     public static void showGenerateSensorData(int amount) {
         System.out.println();
-        System.out.println(amount + " leitura(s) de sensores gerada(s) com sucesso para cada cúpula.");
+        System.out.println(amount + " registro(s) de sensores gerado(s) com sucesso para cada cúpula.");
     }
 
     public static void showEnvironmentalReport(List<String> report) {

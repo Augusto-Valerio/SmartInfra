@@ -10,21 +10,23 @@ import java.util.List;
 
 // Cria modelo + regra de negócio + passa para o repositories
 public class DomeService {
+    public static Dome createDome(String name, int capacity) {
+        return new VegetableDome(name, capacity);
+    }
+
     public static Dome createDome(String name, int capacity, int domeType) {
         if (domeType == 1) {
-            TreeDome dome = new TreeDome(name, capacity);
-            return dome;
+            return new TreeDome(name, capacity);
         }
 
         if (domeType == 2) {
-            VegetableDome dome = new VegetableDome(name, capacity);
-            return dome;
+            return new VegetableDome(name, capacity);
         }
 
-        return null;
+        return createDome(name, capacity);
     }
 
-    public static void createDome(List<Dome> domes) {
+    public static void saveDomes(List<Dome> domes) {
         DomeRepository.saveAll(domes);
         System.out.println("Cúpulas salvas com sucesso!");
     }
