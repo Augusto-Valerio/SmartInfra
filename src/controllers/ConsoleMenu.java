@@ -1,8 +1,6 @@
 package controllers;
 
 import models.dome.Dome;
-import models.dome.TreeDome;
-import models.dome.VegetableDome;
 import services.DomeService;
 import utilities.Menu;
 import utilities.UserInput;
@@ -10,7 +8,7 @@ import utilities.UserInput;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainMenu {
+public class ConsoleMenu {
     public static int menuStart() {
         List<String> options = new ArrayList<>();
 
@@ -92,6 +90,15 @@ public class MainMenu {
 
         for (String line : report) {
             System.out.println(line);
+        }
+    }
+
+    public static void showAlerts(List<String> alerts) {
+        System.out.println();
+        System.out.println("Verificação de alertas");
+
+        for (String alert : alerts) {
+            System.out.println(alert);
         }
     }
 
