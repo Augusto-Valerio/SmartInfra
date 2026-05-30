@@ -24,18 +24,21 @@ public class ApplicationController {
                 running = false;
                 ConsoleMenu.finishSystem();
             }
+
             if (chose == 1) {
                 Dome dome = ConsoleMenu.registerDome();
 
                 domes.add(dome);
 
-                DomeService.createDome(domes);
+                DomeService.saveDomes(domes);
 
                 ConsoleMenu.showRegisteredDome(dome);
             }
+
             if (chose == 2) {
                 ConsoleMenu.listDomes(domes);
             }
+
             if (chose == 3) {
                 if (domes.isEmpty()) {
                     System.out.println("Cadastre uma cúpula antes de gerar os dados randomizados.");
@@ -47,6 +50,7 @@ public class ApplicationController {
                     ConsoleMenu.showGenerateSensorData(amount);
                 }
             }
+
             if (chose == 4) {
                 if (domes.isEmpty()) {
                     System.out.println("Cadastre uma cúpula antes de exibir o relatório ambiental.");
@@ -54,6 +58,7 @@ public class ApplicationController {
                     ConsoleMenu.showEnvironmentalReport(ReportService.generateEnvironmentalReport(domes));
                 }
             }
+
             if (chose == 5) {
                 if (domes.isEmpty()) {
                     System.out.println("Cadastre uma cúpula antes de verificar alertas.");
