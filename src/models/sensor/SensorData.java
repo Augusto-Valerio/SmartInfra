@@ -6,13 +6,15 @@ public class SensorData {
     private double oxygen;
     private double luminosity;
     private double waterLevel;
+    private String createdAt;
 
-    public SensorData(double temperature, double humidity, double oxygen, double luminosity, double waterLevel) {
+    public SensorData(double temperature, double humidity, double oxygen, double luminosity, double waterLevel, String createdAt) {
         this.temperature = temperature;
         this.humidity = humidity;
         this.oxygen = oxygen;
         this.luminosity = luminosity;
         this.waterLevel = waterLevel;
+        this.createdAt = createdAt;
     }
 
     public double getTemperature() {
@@ -53,5 +55,13 @@ public class SensorData {
 
     public void setWaterLevel(double waterLevel) {
         this.waterLevel = waterLevel;
+    }
+
+    public String getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
     }
 }

@@ -12,6 +12,7 @@ public class SensorRepository {
             SensorData sensor = sensorDataList.get(i);
 
             json += "      {\n" +
+                    "        \"dataHora\": \"" + sensor.getCreatedAt() + "\",\n" +
                     "        \"temperatura\": " + sensor.getTemperature() + ",\n" +
                     "        \"umidade\": " + sensor.getHumidity() + ",\n" +
                     "        \"oxigenio\": " + sensor.getOxygen() + ",\n" +

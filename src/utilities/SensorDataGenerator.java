@@ -2,6 +2,8 @@ package utilities;
 
 import models.sensor.SensorData;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Random;
 
 public class SensorDataGenerator {
@@ -18,6 +20,9 @@ public class SensorDataGenerator {
         double luminosity = round(40 + random.nextDouble() * 60);
         double waterLevel = round(30 + random.nextDouble() * 70);
 
-        return new SensorData(temperature, humidity, oxygen, luminosity, waterLevel);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy - HH:mm");
+        String createdAt = LocalDateTime.now().format(formatter);
+
+        return new SensorData(temperature, humidity, oxygen, luminosity, waterLevel, createdAt);
     }
 }
